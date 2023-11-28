@@ -1,0 +1,31 @@
+.transactionItem__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #111111;
+  background-color: steelblue;
+}
+.list_item {
+  padding: 0.2em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+  margin-block: 0.5em;
+}
+.list_item_info {
+  text-align: left;
+}
+.delete_button {
+  align-self: flex-end;
+}
+.red {
+  color: red;
+  font-weight: bolder;
+}
+.green {
+  @extend .red;
+  color: green;
+}

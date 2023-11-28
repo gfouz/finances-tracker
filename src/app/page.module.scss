@@ -1,0 +1,41 @@
+@use "../scss/styles.scss" as *;
+
+.grid__container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+}
+.grid__header {
+  grid-area: header;
+}
+.grid__main {
+  @extend .flex-align-start;
+  grid-area: main;
+  min-height: calc(100vh - 120px);
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+.grid__footer {
+  grid-area: footer;
+}
+.form_section {
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 1;
+}
+.expenseChart {
+  flex: 1;
+  padding: 1em;
+}
+.ExpenseTracker_footer {
+  padding: 1em;
+  color: #f1f1f1;
+  background-color: #444444;
+}
